@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(247, 225, 194), rgb(250, 219, 157));
+}
+.container1{
+    border-top: 3px outset rgba(196, 190, 184, 0.904);
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+}
+
+.featured{
+    margin: 15px 0;
+    border:4px outset white;
+    
+}
+
+.pics{
+    height: auto;
+}
+
+

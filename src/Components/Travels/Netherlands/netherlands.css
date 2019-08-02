@@ -1,0 +1,71 @@
+.amsterdam-page{
+    background-image:url(https://s19.postimg.cc/sm2yazsyr/asssss.png);
+    border:outset;
+    border-color:rgb(71, 61, 40);
+    border-width:5px;
+  }
+
+  .netherlands-pics{
+    width:350px;
+    float:left;
+    margin-left:95px;
+    border-radius:5px;
+    transition: transform .2s;
+  }
+  
+  .netherlands-pics:hover {
+    transform: scale(1.2); 
+  }
+  
+  .netherlands-pics1{
+    width:250px;
+    position:absolute;
+    margin-left:280px;
+    margin-top:45px;
+    border-radius:5px;
+    transition: transform .2s;
+  }
+  
+  .netherlands-pics1:hover {
+    transform: scale(1.2); 
+  }
+  
+  .netherlands-pics2{
+    width:250px;
+    position:absolute;
+    margin-left:12px;
+    border-radius:5px;
+    transition: transform .2s;
+  }
+  
+  .netherlands-pics2:hover {
+    transform: scale(1.2); 
+  }
+  
+  .netherlands-pics3{
+    width:350px;
+    position:absolute;
+    margin-left:95px;
+    margin-top:-30px;
+    border-radius:5px;
+    transition: transform .2s;
+  }
+  
+  .netherlands-pics3:hover {
+    transform: scale(1.2); 
+  }
+
+
+  .paper-plane-amsterdam1{
+    width:150px;
+    float:right;
+    margin-right:300px;
+    margin-top:60px;
+  }
+  
+  .paper-plane-amsterdam2{
+    width:150px;
+    float:left;
+    margin-left:300px;
+    margin-top:60px;
+  }
