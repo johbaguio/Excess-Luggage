@@ -1,0 +1,44 @@
+.navbar-wrapper {
+    display: flex;
+    color: black;
+    background: #FAF0DC;
+    align-items: center;
+    margin: 0 10%;
+
+    .navbar-center {
+        margin: 3% auto;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        .dot {
+            align-items: center;
+            font-size: .6rem;
+            opacity: .5;
+            align-self: center;
+            padding: 0 1%;
+        }
+
+        .nav {
+            transition: font-size .5s ease;
+
+            &:hover {
+                color: black;
+                font-size: 20px;
+            }
+        }
+
+        .active {
+            text-align: center;
+            color: black;
+            padding: 5px;
+            border-bottom: rgba(3, 3, 3, .5) solid 1px;
+        }
+
+
+    }
+}

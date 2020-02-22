@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Gaegu|Maven+Pro&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: #FAF0DC !important;
+  font-family: 'Gaegu', cursive !important; }
+
+body img {
+  max-width: 100%; }
+
+body a {
+  text-decoration: none;
+  color: #4a4a4a; }
+
+body .navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  background: #FAF0DC;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 10%; }
+  body .navbar-wrapper .navbar-center {
+    margin: 3% auto; }
+    body .navbar-wrapper .navbar-center a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      background: transparent; }
+    body .navbar-wrapper .navbar-center .dot {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: .6rem;
+      opacity: .5;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      padding: 0 1%; }
+    body .navbar-wrapper .navbar-center .nav {
+      -webkit-transition: font-size .5s ease;
+      -o-transition: font-size .5s ease;
+      transition: font-size .5s ease; }
+      body .navbar-wrapper .navbar-center .nav:hover {
+        color: black;
+        font-size: 20px; }
+    body .navbar-wrapper .navbar-center .active {
+      text-align: center;
+      color: black;
+      padding: 5px;
+      border-bottom: rgba(3, 3, 3, 0.5) solid 1px; }
+
+body .footer {
+  background: rgba(245, 184, 106, 0.5);
+  padding: 1% 0;
+  font-weight: bold; }
+  body .footer p {
+    margin-bottom: 0px !important; }
+  body .footer a {
+    text-decoration: none;
+    color: #4A4A4A; }
+  body .footer .logo {
+    width: 85px; }
+
+body .mainpage-container h3 {
+  font-family: "Averia Sans Libre", monospace;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline overline;
+  text-transform: uppercase;
+  color: #421303;
+  margin: 8% 0;
+  text-align: center; }
+
+body .mainpage-container .header-wrapper .header-pic {
+  width: 80%;
+  margin: 0% 10%; }
+
+body .mainpage-container .about-me-wrapper {
+  margin: 0 10%;
+  -webkit-box-flex: 1.5;
+  -ms-flex: 1.5;
+  flex: 1.5;
+  border-width: 5px;
+  border-radius: 5px;
+  word-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+  background: rgba(245, 184, 106, 0.5);
+  -webkit-box-shadow: 0 0 8px 8px #FAF0DC inset;
+  box-shadow: 0 0 8px 8px #FAF0DC inset; }
+  body .mainpage-container .about-me-wrapper .about-me-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 768px) {
+      body .mainpage-container .about-me-wrapper .about-me-details {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    body .mainpage-container .about-me-wrapper .about-me-details img.mypic {
+      -webkit-box-flex: 1.1;
+      -ms-flex: 1.1;
+      flex: 1.1;
+      width: 40%;
+      border-radius: 50%;
+      padding: .6%;
+      -webkit-box-shadow: 0 0 4px 4px rgba(245, 184, 106, 0.5) inset;
+      box-shadow: 0 0 4px 4px rgba(245, 184, 106, 0.5) inset;
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: -webkit-transform .5s ease;
+      -o-transition: transform .5s ease;
+      transition: transform .5s ease;
+      transition: transform .5s ease, -webkit-transform .5s ease; }
+      body .mainpage-container .about-me-wrapper .about-me-details img.mypic:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+    body .mainpage-container .about-me-wrapper .about-me-details .about-text {
+      -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+      flex: 2.5;
+      width: 70%;
+      padding: 5% 3% 5% 1%;
+      font-size: 18px; }
+      body .mainpage-container .about-me-wrapper .about-me-details .about-text .welcome-about {
+        font-size: 20px;
+        font-weight: bold;
+        word-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px; }
+      body .mainpage-container .about-me-wrapper .about-me-details .about-text .signature-aboutme {
+        width: 25%; }
+
+body .mainpage-container .frontpage-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% 10% 4% 10%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  body .mainpage-container .frontpage-details .places-visited-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-width: 5px;
+    border-radius: 5px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    @media (max-width: 768px) {
+      body .mainpage-container .frontpage-details .places-visited-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    body .mainpage-container .frontpage-details .places-visited-wrapper h3 {
+      margin: 4.5% 0; }
+    body .mainpage-container .frontpage-details .places-visited-wrapper .ph-places {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 0 2%; }
+      body .mainpage-container .frontpage-details .places-visited-wrapper .ph-places .ph-map {
+        width: 100px; }
+    body .mainpage-container .frontpage-details .places-visited-wrapper .europe-places {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 0 2%; }
+      body .mainpage-container .frontpage-details .places-visited-wrapper .europe-places .europe {
+        width: 150px; }
+  body .mainpage-container .frontpage-details .places li {
+    white-space: nowrap; }
+    @media (max-width: 768px) {
+      body .mainpage-container .frontpage-details .places li {
+        font-size: 14px; } }
+    body .mainpage-container .frontpage-details .places li:hover {
+      font-size: 17px;
+      color: #421303; }
+      @media (max-width: 768px) {
+        body .mainpage-container .frontpage-details .places li:hover {
+          font-size: 15px; } }
+    body .mainpage-container .frontpage-details .places li a {
+      font-weight: bold;
+      padding: 4px 0;
+      -webkit-transition: font-size .5s ease;
+      -o-transition: font-size .5s ease;
+      transition: font-size .5s ease; }
+  body .mainpage-container .frontpage-details .fa-check-circle {
+    color: rgba(66, 19, 3, 0.5); }
+
+body .place-page .icons {
+  width: 500px;
+  margin: auto;
+  margin-top: 12px;
+  padding: 0px;
+  display: block; }
+
+body .place-page .icons-diff-size {
+  width: 380px;
+  margin: auto;
+  margin-top: 12px;
+  padding: 0px;
+  display: block; }
+
+body .place-page .title-of-stories {
+  color: brown;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  padding: 5px; }
+  @media (max-width: 768px) {
+    body .place-page .title-of-stories {
+      font-size: 24px; } }
+
+body .place-page .siargao-details {
+  margin: 0 10% 5% 10%; }
+  body .place-page .siargao-details .info p {
+    text-indent: 3%;
+    font-size: 18px; }
+    @media (max-width: 768px) {
+      body .place-page .siargao-details .info p {
+        font-size: 15px; } }
+  body .place-page .siargao-details .info .pics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 2% 0; }
+    body .place-page .siargao-details .info .pics .top-pics {
+      width: 32%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      opacity: .7;
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: -webkit-transform .5s ease;
+      -o-transition: transform .5s ease;
+      transition: transform .5s ease;
+      transition: transform .5s ease, -webkit-transform .5s ease; }
+      @media (max-width: 768px) {
+        body .place-page .siargao-details .info .pics .top-pics {
+          width: 40%; } }
+      body .place-page .siargao-details .info .pics .top-pics:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1; }
+    body .place-page .siargao-details .info .pics .pics-smaller {
+      width: 40%;
+      padding: 0 30px;
+      margin-bottom: 20px;
+      opacity: .8;
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: -webkit-transform .5s ease;
+      -o-transition: transform .5s ease;
+      transition: transform .5s ease;
+      transition: transform .5s ease, -webkit-transform .5s ease; }
+      @media (max-width: 768px) {
+        body .place-page .siargao-details .info .pics .pics-smaller {
+          width: 60%; } }
+      body .place-page .siargao-details .info .pics .pics-smaller:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1; }
+    body .place-page .siargao-details .info .pics .pics-portrait {
+      width: 30%;
+      height: 20%;
+      padding: 0 30px;
+      margin-bottom: 20px;
+      opacity: .8;
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: -webkit-transform .5s ease;
+      -o-transition: transform .5s ease;
+      transition: transform .5s ease;
+      transition: transform .5s ease, -webkit-transform .5s ease; }
+      @media (max-width: 768px) {
+        body .place-page .siargao-details .info .pics .pics-portrait {
+          width: 60%; } }
+      body .place-page .siargao-details .info .pics .pics-portrait:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1; }
+    body .place-page .siargao-details .info .pics .standing {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+
+body .place-page .signature-planes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: -3%; }
+  body .place-page .signature-planes .signature {
+    width: 25%; }
+  body .place-page .signature-planes .paper-plane {
+    height: 10%;
+    opacity: .8; }
+
+body .boracay-pics {
+  border-radius: 8% !important; }
+
+body .aurora-pic {
+  width: 35% !important; }
+
+body .paris-pics {
+  width: 25% !important;
+  height: 2% !important;
+  padding: 0 2% !important; }
+
+body .quote-paris,
+body .bonjour-paris {
+  text-align: center;
+  font-size: 20px !important;
+  font-weight: bold;
+  padding-top: 16px; }

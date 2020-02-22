@@ -1,0 +1,164 @@
+.mainpage-container {
+
+    h3 {
+        font-family: "Averia Sans Libre", monospace;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: underline overline;
+        text-transform: uppercase;
+        color: rgb(66, 19, 3);
+        margin: 8% 0;
+        text-align: center;
+    }
+
+    .header-wrapper {
+
+        .header-pic {
+            width: 80%;
+            margin: 0% 10%;
+        }
+    }
+
+
+
+    .about-me-wrapper {
+        margin: 0 10%;
+        flex: 1.5;
+        border-width: 5px;
+        border-radius: 5px;
+        word-spacing: 2px;
+        line-height: 1.5;
+        text-align: center;
+        background: rgba(245, 184, 106, .5);
+        box-shadow: 0 0 8px 8px #FAF0DC inset;
+
+
+        .about-me-details {
+            display: flex;
+            margin: 0 10%;
+            align-items: center;
+
+            @include md {
+                flex-direction: column;
+            }
+
+
+            img.mypic {
+                flex: 1.1;
+                width: 40%;
+                border-radius: 50%;
+                padding: .6%;
+                box-shadow: 0 0 4px 4px rgba(245, 184, 106, .5) inset;
+                transition: transform .5s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .about-text {
+                flex: 2.5;
+                width: 70%;
+                padding: 5% 3% 5% 1%;
+                font-size: 18px;
+
+                .welcome-about {
+                    font-size: 20px;
+                    font-weight: bold;
+                    word-spacing: 2px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                .signature-aboutme {
+                    width: 25%;
+                }
+            }
+
+
+        }
+    }
+
+    .frontpage-details {
+        display: flex;
+        margin: 2% 10% 4% 10%;
+        justify-content: center;
+        // background-color:rgb(255, 209, 173);
+        // box-shadow:10px 10px 60px 15px rgb(209, 133, 57) inset;
+
+
+        .places-visited-wrapper {
+            display: flex;
+            border-width: 5px;
+            border-radius: 5px;
+            word-spacing: 2px;
+            line-height: 1.5;
+            text-align: center;
+            flex: 1;
+
+            @include md {
+                flex-direction: column;
+            }
+
+            h3 {
+                margin: 4.5% 0;
+            }
+
+            .ph-places {
+                flex: 1;
+                padding: 0 2%;
+
+                .ph-map {
+                    width: 100px;
+                }
+
+
+
+            }
+
+            .europe-places {
+                flex: 1;
+                padding: 0 2%;
+
+                .europe {
+                    width: 150px;
+                }
+
+            }
+        }
+
+        .places {
+
+            li {
+                white-space: nowrap;
+
+                @include md {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    font-size: 17px;
+                    color: rgb(66, 19, 3);
+
+                    @include md {
+                        font-size: 15px;
+                    }
+                }
+
+                a {
+                    font-weight: bold;
+                    padding: 4px 0;
+                    transition: font-size .5s ease;
+
+                }
+            }
+        }
+
+        .fa-check-circle {
+            color: rgba(66, 19, 3, .5);
+        }
+    }
+
+
+}

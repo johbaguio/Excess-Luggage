@@ -1,0 +1,140 @@
+.place-page {
+
+    .icons {
+        width: 500px;
+        margin: auto;
+        margin-top: 12px;
+        padding: 0px;
+        display: block;
+    }
+
+    .icons-diff-size {
+        width: 380px;
+        margin: auto;
+        margin-top: 12px;
+        padding: 0px;
+        display: block;
+    }
+
+    .title-of-stories {
+        color: brown;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        padding: 5px;
+
+        @include md {
+            font-size: 24px;
+        }
+    }
+
+    .siargao-details {
+        margin: 0 10% 5% 10%;
+
+        .info {
+
+            p {
+                text-indent: 3%;
+                font-size: 18px;
+
+                @include md {
+                    font-size: 15px;
+                }
+
+            }
+
+            .pics {
+                display: flex;
+                justify-content: center;
+                margin: 2% 0;
+
+                .top-pics {
+                    width: 32%;
+                    padding: 0 10px;
+                    margin-bottom: 20px;
+                    border-radius: 50%;
+                    opacity: .7;
+                    transition: transform .5s ease;
+
+                    @include md {
+                        width: 40%;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                        opacity: 1;
+                    }
+
+                }
+
+                .pics-smaller {
+                    width: 40%;
+                    padding: 0 30px;
+                    margin-bottom: 20px;
+                    opacity: .8;
+                    transition: transform .5s ease;
+
+                    @include md {
+                        width: 60%;
+                    }
+
+
+                    &:hover {
+                        transform: scale(1.05);
+                        opacity: 1;
+                    }
+
+                }
+
+                .pics-portrait {
+                    width: 30%;
+                    height: 20%;
+                    padding: 0 30px;
+                    margin-bottom: 20px;
+                    opacity: .8;
+                    transition: transform .5s ease;
+
+                    @include md {
+                        width: 60%;
+                    }
+
+
+                    &:hover {
+                        transform: scale(1.05);
+                        opacity: 1;
+                    }
+
+                }
+
+                .standing {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+
+
+    .signature-planes {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: -3%;
+
+        .signature {
+            width: 25%;
+        }
+
+        .paper-plane {
+            height: 10%;
+            opacity: .8;
+        }
+
+
+
+
+    }
+}

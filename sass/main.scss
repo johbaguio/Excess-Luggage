@@ -1,0 +1,34 @@
+@import './utilities/mixin';
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Gaegu|Maven+Pro&display=swap');
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background: #FAF0DC !important;
+  font-family: 'Gaegu', cursive !important;
+
+}
+
+
+body {
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+
+  @import './components/navbar';
+  @import './components/footer';
+  @import './pages/frontpage';
+  @import './pages/siargao';
+  @import './pages/boracay';
+  @import './pages/aurora';
+  @import './pages/paris';
+  @import './pages/netherlands';
+
+}

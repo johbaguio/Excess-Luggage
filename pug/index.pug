@@ -1,0 +1,57 @@
+extends partials/base.pug
+block body
+  +navigation() 
+  .mainpage-container
+    .header-wrapper
+      img(src="https://i.postimg.cc/VkvL64ZF/HEADER.jpg", alt="Surfing pic" class='header-pic')
+      .about-me-wrapper
+        .about-me-details
+          img(src="https://s19.postimg.cc/eluvvi09v/lol.jpg", alt="Me" class='mypic')
+          .about-text
+            h3
+              |About Me
+            p
+              |I am a 27-year-old Filipina explorer of places that could potentially give extraordinary, extreme, and exceptional experiences that I could bring along on to my next expedition. Buckle up and take a look at my exhibit inside my luggage of experiences that surely exceed expectations.<br><br>
+            //- p 
+            //-   |Aside from navigating the cyber world, I also love exploring different places in the world. I love immersing myself in the diversities found in the country’s structures, history, and culture. In every place I’ve set my foot into, I made sure to take a piece of that place with me. These fragments of memories are collectively known as my excess luggage . <br><br>
+            p.welcome-about
+              |Welcome to my Excess Luggage!♡
+            img(src="https://s19.postimg.cc/haljqnx5v/sign.png", alt="Xoxo, Johanna" class='signature-aboutme')
+    
+    .frontpage-details
+      .places-visited-wrapper
+        .ph-places
+          h3
+            |Exploring the Philippines  
+          img(src="https://s19.postimg.cc/jjd1tuz77/Philippine-_Map-_PNG-_Image.png", alt="Philippines" class='ph-map')
+          .places
+            ul
+              li
+                <i class="far fa-check-circle"></i>
+                <a href="./siargao.html">EXPERIENCING THE WAVES IN SIARGAO</a>
+              li
+                <i class="far fa-check-circle"></i>
+                <a href="./boracay.html">EXPOSED NATURE'S BIGGEST SECRET: BORACAY</a>
+              
+        .europe-places
+          h3
+            |Extraordinary Europe
+          img(src="https://s19.postimg.cc/62g3b6rib/europe-flag-map-file-flags-png-wikimedia-commons.png", alt="Philippines" class='europe') 
+          .places
+            ul
+              li
+                <i class="far fa-check-circle"></i>
+                <a href="./aurora.html">EXCLUSIVE SHOW/CHASE OF AURORA BOREALIS IN NORWAY</a>
+              li
+                <i class="far fa-check-circle"></i>
+                <a href="./paris.html">EXQUISITE FRENCH KISS IN THE CITY OF LOVE</a>
+              li
+                <i class="far fa-check-circle"></i>
+                <a href="./netherlands.html">EXHILARATING VIEW FROM THE HELICOPTER IN THE NETHERLANDS</a>
+  +footer()
+
+
+       
+
+
+
