@@ -34,6 +34,10 @@
     .siargao-details {
         margin: 0 10% 5% 10%;
 
+        @include md {
+            margin: 0 6%;
+        }
+
         .info {
 
             p {
@@ -50,6 +54,10 @@
                 display: flex;
                 justify-content: center;
                 margin: 2% 0;
+
+                @include md {
+                    margin: 2% 2%;
+                }
 
                 .top-pics {
                     width: 32%;
@@ -70,6 +78,20 @@
 
                 }
 
+
+
+            }
+
+            .pics-smaller-container {
+                display: flex;
+                justify-content: center;
+                margin: 2% 0;
+
+                @include md {
+                    flex-direction: column;
+
+                }
+
                 .pics-smaller {
                     width: 40%;
                     padding: 0 30px;
@@ -78,7 +100,9 @@
                     transition: transform .5s ease;
 
                     @include md {
-                        width: 60%;
+                        width: 100%;
+                        padding: 0 10px;
+
                     }
 
 
@@ -86,6 +110,18 @@
                         transform: scale(1.05);
                         opacity: 1;
                     }
+
+                }
+            }
+
+            .portrait-pics-container {
+
+                display: flex;
+                justify-content: center;
+                margin: 2% 0;
+
+                @include md {
+                    flex-direction: column;
 
                 }
 
@@ -98,7 +134,11 @@
                     transition: transform .5s ease;
 
                     @include md {
-                        width: 60%;
+                        width: 100%;
+                        padding: 0 10px;
+                        height: auto;
+                        margin: 15px auto;
+
                     }
 
 
@@ -113,6 +153,7 @@
                     align-self: center;
                 }
             }
+
         }
     }
 
@@ -126,11 +167,22 @@
 
         .signature {
             width: 25%;
+
+            @include md {
+                width: 55%;
+                margin: 3% -10% 0 0;
+            }
         }
 
         .paper-plane {
             height: 10%;
             opacity: .8;
+
+            @include md {
+                width: 25%;
+                height: auto;
+                margin: 15% 0;
+            }
         }
 
 

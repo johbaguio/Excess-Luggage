@@ -16,6 +16,11 @@
         .header-pic {
             width: 80%;
             margin: 0% 10%;
+
+            @include md {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 
@@ -32,6 +37,9 @@
         background: rgba(245, 184, 106, .5);
         box-shadow: 0 0 8px 8px #FAF0DC inset;
 
+        @include md {
+            margin: 0 3%;
+        }
 
         .about-me-details {
             display: flex;
@@ -40,6 +48,7 @@
 
             @include md {
                 flex-direction: column;
+                margin: 0 3%;
             }
 
 
@@ -51,6 +60,11 @@
                 box-shadow: 0 0 4px 4px rgba(245, 184, 106, .5) inset;
                 transition: transform .5s ease;
 
+                @include md {
+                    margin: 10% 0 0 0;
+                    width: 60%;
+                }
+
                 &:hover {
                     transform: scale(1.05);
                 }
@@ -59,8 +73,13 @@
             .about-text {
                 flex: 2.5;
                 width: 70%;
-                padding: 5% 3% 5% 1%;
+                padding: 5% 1%;
                 font-size: 18px;
+
+                @include md {
+                    width: 95%;
+                    padding: 0 1%;
+                }
 
                 .welcome-about {
                     font-size: 20px;
@@ -73,6 +92,12 @@
 
                 .signature-aboutme {
                     width: 25%;
+
+
+                    @include md {
+                        width: 45%;
+                        margin-bottom: 5%;
+                    }
                 }
             }
 
@@ -84,8 +109,11 @@
         display: flex;
         margin: 2% 10% 4% 10%;
         justify-content: center;
-        // background-color:rgb(255, 209, 173);
-        // box-shadow:10px 10px 60px 15px rgb(209, 133, 57) inset;
+
+        @include md {
+            margin: 0 3%;
+        }
+
 
 
         .places-visited-wrapper {
@@ -108,6 +136,11 @@
             .ph-places {
                 flex: 1;
                 padding: 0 2%;
+
+                @include md {
+                    margin: 5% 0;
+                }
+
 
                 .ph-map {
                     width: 100px;
@@ -132,14 +165,16 @@
 
             li {
                 white-space: nowrap;
+                padding: .8% 0;
 
                 @include md {
-                    font-size: 14px;
+                    font-size: 15px;
+                    white-space: normal;
                 }
 
                 &:hover {
                     font-size: 17px;
-                    color: rgb(66, 19, 3);
+                    color: rgb(147, 204, 14);
 
                     @include md {
                         font-size: 15px;

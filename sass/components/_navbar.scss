@@ -5,14 +5,23 @@
     align-items: center;
     margin: 0 10%;
 
+    @include md {
+        margin: 0 5%;
+    }
+
     .navbar-center {
-        margin: 3% auto;
+        margin: 4% auto;
 
         a {
             font-size: 1.2rem;
             font-weight: bold;
             text-decoration: none;
             background: transparent;
+
+            @include md {
+                padding: 2% 0;
+                font-size: 1.05rem;
+            }
         }
 
         .dot {
@@ -36,7 +45,6 @@
             text-align: center;
             color: black;
             padding: 5px;
-            border-bottom: rgba(3, 3, 3, .5) solid 1px;
         }
 
 

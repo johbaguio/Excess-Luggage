@@ -23,13 +23,20 @@ body .navbar-wrapper {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 10%; }
+  @media (max-width: 768px) {
+    body .navbar-wrapper {
+      margin: 0 5%; } }
   body .navbar-wrapper .navbar-center {
-    margin: 3% auto; }
+    margin: 4% auto; }
     body .navbar-wrapper .navbar-center a {
       font-size: 1.2rem;
       font-weight: bold;
       text-decoration: none;
       background: transparent; }
+      @media (max-width: 768px) {
+        body .navbar-wrapper .navbar-center a {
+          padding: 2% 0;
+          font-size: 1.05rem; } }
     body .navbar-wrapper .navbar-center .dot {
       -webkit-box-align: center;
       -ms-flex-align: center;
@@ -50,8 +57,7 @@ body .navbar-wrapper {
     body .navbar-wrapper .navbar-center .active {
       text-align: center;
       color: black;
-      padding: 5px;
-      border-bottom: rgba(3, 3, 3, 0.5) solid 1px; }
+      padding: 5px; }
 
 body .footer {
   background: rgba(245, 184, 106, 0.5);
@@ -78,6 +84,10 @@ body .mainpage-container h3 {
 body .mainpage-container .header-wrapper .header-pic {
   width: 80%;
   margin: 0% 10%; }
+  @media (max-width: 768px) {
+    body .mainpage-container .header-wrapper .header-pic {
+      width: 100%;
+      margin: 0; } }
 
 body .mainpage-container .about-me-wrapper {
   margin: 0 10%;
@@ -92,6 +102,9 @@ body .mainpage-container .about-me-wrapper {
   background: rgba(245, 184, 106, 0.5);
   -webkit-box-shadow: 0 0 8px 8px #FAF0DC inset;
   box-shadow: 0 0 8px 8px #FAF0DC inset; }
+  @media (max-width: 768px) {
+    body .mainpage-container .about-me-wrapper {
+      margin: 0 3%; } }
   body .mainpage-container .about-me-wrapper .about-me-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,7 +118,8 @@ body .mainpage-container .about-me-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        margin: 0 3%; } }
     body .mainpage-container .about-me-wrapper .about-me-details img.mypic {
       -webkit-box-flex: 1.1;
       -ms-flex: 1.1;
@@ -120,6 +134,10 @@ body .mainpage-container .about-me-wrapper {
       -o-transition: transform .5s ease;
       transition: transform .5s ease;
       transition: transform .5s ease, -webkit-transform .5s ease; }
+      @media (max-width: 768px) {
+        body .mainpage-container .about-me-wrapper .about-me-details img.mypic {
+          margin: 10% 0 0 0;
+          width: 60%; } }
       body .mainpage-container .about-me-wrapper .about-me-details img.mypic:hover {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -129,8 +147,12 @@ body .mainpage-container .about-me-wrapper {
       -ms-flex: 2.5;
       flex: 2.5;
       width: 70%;
-      padding: 5% 3% 5% 1%;
+      padding: 5% 1%;
       font-size: 18px; }
+      @media (max-width: 768px) {
+        body .mainpage-container .about-me-wrapper .about-me-details .about-text {
+          width: 95%;
+          padding: 0 1%; } }
       body .mainpage-container .about-me-wrapper .about-me-details .about-text .welcome-about {
         font-size: 20px;
         font-weight: bold;
@@ -140,6 +162,10 @@ body .mainpage-container .about-me-wrapper {
         padding: 10px; }
       body .mainpage-container .about-me-wrapper .about-me-details .about-text .signature-aboutme {
         width: 25%; }
+        @media (max-width: 768px) {
+          body .mainpage-container .about-me-wrapper .about-me-details .about-text .signature-aboutme {
+            width: 45%;
+            margin-bottom: 5%; } }
 
 body .mainpage-container .frontpage-details {
   display: -webkit-box;
@@ -149,6 +175,9 @@ body .mainpage-container .frontpage-details {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media (max-width: 768px) {
+    body .mainpage-container .frontpage-details {
+      margin: 0 3%; } }
   body .mainpage-container .frontpage-details .places-visited-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -174,6 +203,9 @@ body .mainpage-container .frontpage-details {
       -ms-flex: 1;
       flex: 1;
       padding: 0 2%; }
+      @media (max-width: 768px) {
+        body .mainpage-container .frontpage-details .places-visited-wrapper .ph-places {
+          margin: 5% 0; } }
       body .mainpage-container .frontpage-details .places-visited-wrapper .ph-places .ph-map {
         width: 100px; }
     body .mainpage-container .frontpage-details .places-visited-wrapper .europe-places {
@@ -184,13 +216,15 @@ body .mainpage-container .frontpage-details {
       body .mainpage-container .frontpage-details .places-visited-wrapper .europe-places .europe {
         width: 150px; }
   body .mainpage-container .frontpage-details .places li {
-    white-space: nowrap; }
+    white-space: nowrap;
+    padding: .8% 0; }
     @media (max-width: 768px) {
       body .mainpage-container .frontpage-details .places li {
-        font-size: 14px; } }
+        font-size: 15px;
+        white-space: normal; } }
     body .mainpage-container .frontpage-details .places li:hover {
       font-size: 17px;
-      color: #421303; }
+      color: #93cc0e; }
       @media (max-width: 768px) {
         body .mainpage-container .frontpage-details .places li:hover {
           font-size: 15px; } }
@@ -232,6 +266,9 @@ body .place-page .title-of-stories {
 
 body .place-page .siargao-details {
   margin: 0 10% 5% 10%; }
+  @media (max-width: 768px) {
+    body .place-page .siargao-details {
+      margin: 0 6%; } }
   body .place-page .siargao-details .info p {
     text-indent: 3%;
     font-size: 18px; }
@@ -246,6 +283,9 @@ body .place-page .siargao-details {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 2% 0; }
+    @media (max-width: 768px) {
+      body .place-page .siargao-details .info .pics {
+        margin: 2% 2%; } }
     body .place-page .siargao-details .info .pics .top-pics {
       width: 32%;
       padding: 0 10px;
@@ -265,7 +305,21 @@ body .place-page .siargao-details {
         -ms-transform: scale(1.05);
         transform: scale(1.05);
         opacity: 1; }
-    body .place-page .siargao-details .info .pics .pics-smaller {
+  body .place-page .siargao-details .info .pics-smaller-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 2% 0; }
+    @media (max-width: 768px) {
+      body .place-page .siargao-details .info .pics-smaller-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    body .place-page .siargao-details .info .pics-smaller-container .pics-smaller {
       width: 40%;
       padding: 0 30px;
       margin-bottom: 20px;
@@ -276,14 +330,29 @@ body .place-page .siargao-details {
       transition: transform .5s ease;
       transition: transform .5s ease, -webkit-transform .5s ease; }
       @media (max-width: 768px) {
-        body .place-page .siargao-details .info .pics .pics-smaller {
-          width: 60%; } }
-      body .place-page .siargao-details .info .pics .pics-smaller:hover {
+        body .place-page .siargao-details .info .pics-smaller-container .pics-smaller {
+          width: 100%;
+          padding: 0 10px; } }
+      body .place-page .siargao-details .info .pics-smaller-container .pics-smaller:hover {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
         opacity: 1; }
-    body .place-page .siargao-details .info .pics .pics-portrait {
+  body .place-page .siargao-details .info .portrait-pics-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 2% 0; }
+    @media (max-width: 768px) {
+      body .place-page .siargao-details .info .portrait-pics-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    body .place-page .siargao-details .info .portrait-pics-container .pics-portrait {
       width: 30%;
       height: 20%;
       padding: 0 30px;
@@ -295,14 +364,17 @@ body .place-page .siargao-details {
       transition: transform .5s ease;
       transition: transform .5s ease, -webkit-transform .5s ease; }
       @media (max-width: 768px) {
-        body .place-page .siargao-details .info .pics .pics-portrait {
-          width: 60%; } }
-      body .place-page .siargao-details .info .pics .pics-portrait:hover {
+        body .place-page .siargao-details .info .portrait-pics-container .pics-portrait {
+          width: 100%;
+          padding: 0 10px;
+          height: auto;
+          margin: 15px auto; } }
+      body .place-page .siargao-details .info .portrait-pics-container .pics-portrait:hover {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
         opacity: 1; }
-    body .place-page .siargao-details .info .pics .standing {
+    body .place-page .siargao-details .info .portrait-pics-container .standing {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
@@ -318,9 +390,18 @@ body .place-page .signature-planes {
   margin-bottom: -3%; }
   body .place-page .signature-planes .signature {
     width: 25%; }
+    @media (max-width: 768px) {
+      body .place-page .signature-planes .signature {
+        width: 55%;
+        margin: 3% -10% 0 0; } }
   body .place-page .signature-planes .paper-plane {
     height: 10%;
     opacity: .8; }
+    @media (max-width: 768px) {
+      body .place-page .signature-planes .paper-plane {
+        width: 25%;
+        height: auto;
+        margin: 15% 0; } }
 
 body .boracay-pics {
   border-radius: 8% !important; }
