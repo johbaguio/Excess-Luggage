@@ -1,19 +1,22 @@
 mixin navigation()
+    script(
+      src="../javascript/index.js"
+    )
     <nav class="navbar-wrapper">
         <div class="navbar-center">
-            <a href='./index.html' class="nav active">
+            <a href='./index.html' class="nav active" onclick={showActive(0)}>
                 |Home 
             </a>
             <i class="fa fa-circle dot"></i>
-            <a class="nav">
+            <a class="nav" onclick={showActive(1)}>
                 |About
             </a>
             <i class="fa fa-circle dot"></i>
-            <a class="nav">
+            <a class="nav" onclick={showActive(2)}>
                 |Places
             </a>
             <i class="fa fa-circle dot"></i>
-            <a class="nav">
+            <a href='./contact.html' class="nav" onclick={showActive(3)}>
                 |Contact
             </a>
         </div>  

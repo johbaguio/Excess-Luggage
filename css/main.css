@@ -418,6 +418,30 @@ body .place-page .signature-planes {
         height: auto;
         margin: 15% 0; } }
 
+body .place-page .places-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  body .place-page .places-links .links-after-stories {
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    border: white 1px outset;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0 2% 5% 0; }
+    @media (max-width: 768px) {
+      body .place-page .places-links .links-after-stories {
+        font-size: 9px;
+        padding: 8px; } }
+    body .place-page .places-links .links-after-stories:hover {
+      color: black;
+      font-weight: bold; }
+
 body .boracay-pics {
   border-radius: 8% !important; }
 
@@ -441,3 +465,47 @@ body .bonjour-paris {
   font-size: 20px !important;
   font-weight: bold;
   padding-top: 16px; }
+
+body .contact-options {
+  text-align: center;
+  margin: 2% 10%; }
+  body .contact-options .contact-address {
+    margin: 1% 0; }
+    body .contact-options .contact-address h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 40px; }
+      @media (max-width: 768px) {
+        body .contact-options .contact-address h4 {
+          font-size: 25px; } }
+    body .contact-options .contact-address p,
+    body .contact-options .contact-address a {
+      font-size: 20px;
+      margin: 10px 0;
+      white-space: nowrap; }
+      @media (max-width: 768px) {
+        body .contact-options .contact-address p,
+        body .contact-options .contact-address a {
+          font-size: 18px; } }
+  body .contact-options .contact-socials {
+    margin: 15px 0; }
+    body .contact-options .contact-socials a.social-link {
+      font-size: 22px;
+      padding-bottom: 25px;
+      -webkit-transition: font-size .5s ease;
+      -o-transition: font-size .5s ease;
+      transition: font-size .5s ease; }
+      body .contact-options .contact-socials a.social-link:hover {
+        color: brown;
+        font-size: 23px; }
+      body .contact-options .contact-socials a.social-link .icon {
+        font-size: 20px;
+        color: black;
+        vertical-align: middle; }
+  body .contact-options .plane-pic {
+    width: 25%;
+    margin: 0 10%;
+    opacity: .8; }
+    @media (max-width: 768px) {
+      body .contact-options .plane-pic {
+        width: 35%; } }

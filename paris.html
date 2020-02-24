@@ -13,15 +13,15 @@
   </head>
   <body>
     <!-- mixins-->
-        <nav class="navbar-wrapper">
+        <script src="../javascript/index.js"></script><nav class="navbar-wrapper">
 <div class="navbar-center">
-<a href='./index.html' class="nav active">Home </a>
+<a href='./index.html' class="nav active" onclick={showActive(0)}>Home </a>
 <i class="fa fa-circle dot"></i>
-<a class="nav">About</a>
+<a class="nav" onclick={showActive(1)}>About</a>
 <i class="fa fa-circle dot"></i>
-<a class="nav">Places</a>
+<a class="nav" onclick={showActive(2)}>Places</a>
 <i class="fa fa-circle dot"></i>
-<a class="nav">Contact</a>
+<a href='./contact.html' class="nav" onclick={showActive(3)}>Contact</a>
 </div>  
 </nav>
     <div class="place-page"><img src="https://s19.postimg.cc/nsnc0aukj/paris.png" alt="surfing icons" class="icons">
@@ -50,6 +50,11 @@
       <div class="signature-planes"><img src="https://s19.postimg.cc/4qdlo02c3/plane.png" alt="paper plane png pic" class="paper-plane"> 
 <img src="https://s19.postimg.cc/6hdkyrr83/sign.png" alt="Xoxo,Johanna" class="signature">
 <img src="https://s19.postimg.cc/67z1zmro3/plane2.png" alt="paper plane png pic" class="paper-plane"> 
+      </div>
+      <div class="places-links"><a class="links-after-stories" href="./siargao.html"> Siargao-Philippines</a>
+<a class="links-after-stories" href="./boracay.html"> Boracay-Philippines</a>
+<a class="links-after-stories" href="./aurora.html"> Aurora Borealis-Norway</a>
+<a class="links-after-stories" href="./netherlands.html">The Netherlands</a>
       </div>
     </div>
         <footer class="footer">
