@@ -56,7 +56,7 @@
                 margin: 2% 0;
 
                 @include md {
-                    margin: 2% 2%;
+                    margin: 2% 0%;
                 }
 
                 .top-pics {
@@ -68,7 +68,10 @@
                     transition: transform .5s ease;
 
                     @include md {
-                        width: 40%;
+                        width: 35%;
+                        height: 25%;
+                        padding: 0 5px;
+                        margin-bottom: 10px;
                     }
 
                     &:hover {
@@ -169,7 +172,8 @@
             width: 25%;
 
             @include md {
-                width: 55%;
+                width: 50%;
+                height: 20%;
                 margin: 3% -10% 0 0;
             }
         }

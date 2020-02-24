@@ -296,7 +296,7 @@ body .place-page .siargao-details {
     margin: 2% 0; }
     @media (max-width: 768px) {
       body .place-page .siargao-details .info .pics {
-        margin: 2% 2%; } }
+        margin: 2% 0%; } }
     body .place-page .siargao-details .info .pics .top-pics {
       width: 32%;
       padding: 0 10px;
@@ -310,7 +310,10 @@ body .place-page .siargao-details {
       transition: transform .5s ease, -webkit-transform .5s ease; }
       @media (max-width: 768px) {
         body .place-page .siargao-details .info .pics .top-pics {
-          width: 40%; } }
+          width: 35%;
+          height: 25%;
+          padding: 0 5px;
+          margin-bottom: 10px; } }
       body .place-page .siargao-details .info .pics .top-pics:hover {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -403,7 +406,8 @@ body .place-page .signature-planes {
     width: 25%; }
     @media (max-width: 768px) {
       body .place-page .signature-planes .signature {
-        width: 55%;
+        width: 50%;
+        height: 20%;
         margin: 3% -10% 0 0; } }
   body .place-page .signature-planes .paper-plane {
     height: 10%;
@@ -419,11 +423,17 @@ body .boracay-pics {
 
 body .aurora-pic {
   width: 35% !important; }
+  @media (max-width: 768px) {
+    body .aurora-pic {
+      width: 100% !important; } }
 
 body .paris-pics {
   width: 25% !important;
   height: 2% !important;
   padding: 0 2% !important; }
+  @media (max-width: 768px) {
+    body .paris-pics {
+      width: 35% !important; } }
 
 body .quote-paris,
 body .bonjour-paris {
