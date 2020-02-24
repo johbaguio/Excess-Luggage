@@ -23,7 +23,8 @@ body .navbar-wrapper {
   -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
-  margin: 0 10%; }
+  margin: 0 10%;
+  white-space: nowrap; }
   @media (max-width: 768px) {
     body .navbar-wrapper {
       margin: 0 2%; } }

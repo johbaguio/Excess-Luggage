@@ -5,6 +5,7 @@
     align-items: center;
     text-transform: uppercase;
     margin: 0 10%;
+    white-space: nowrap;
 
     @include md {
         margin: 0 2%;
