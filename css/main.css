@@ -228,17 +228,19 @@ body .mainpage-container .frontpage-details {
         width: 150px; }
   body .mainpage-container .frontpage-details .places li {
     white-space: nowrap;
-    padding: .8% 0; }
-    @media (max-width: 768px) {
+    padding: 1% 0;
+    border: white outset;
+    margin: 3% 0; }
+    @media (max-width: 992px) {
       body .mainpage-container .frontpage-details .places li {
         font-size: 15px;
         white-space: normal; } }
     body .mainpage-container .frontpage-details .places li:hover {
       font-size: 17px;
       color: #93cc0e; }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         body .mainpage-container .frontpage-details .places li:hover {
-          font-size: 15px; } }
+          font-size: 16px; } }
     body .mainpage-container .frontpage-details .places li a {
       font-weight: bold;
       padding: 4px 0;
@@ -509,3 +511,72 @@ body .contact-options {
     @media (max-width: 768px) {
       body .contact-options .plane-pic {
         width: 35%; } }
+
+body .about-me-container {
+  margin: 0 10%;
+  border-width: 5px;
+  border-radius: 5px;
+  word-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+  background: rgba(245, 184, 106, 0.5);
+  -webkit-box-shadow: 0 0 8px 8px #FAF0DC inset;
+  box-shadow: 0 0 8px 8px #FAF0DC inset; }
+  @media (max-width: 768px) {
+    body .about-me-container {
+      margin: 0 3%; } }
+  body .about-me-container .about-me-info {
+    margin: 0 10%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 768px) {
+      body .about-me-container .about-me-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 3%; } }
+    body .about-me-container .about-me-info h3 {
+      margin: 0 !important;
+      padding: 30px 0 15px 0; }
+      @media (max-width: 768px) {
+        body .about-me-container .about-me-info h3 {
+          padding: 30px 0 0px 0; } }
+    body .about-me-container .about-me-info p {
+      font-size: 18px;
+      padding: 10px 0; }
+      @media (max-width: 768px) {
+        body .about-me-container .about-me-info p {
+          padding: 5px 2px;
+          font-size: 17px; } }
+    body .about-me-container .about-me-info img.mypic1 {
+      width: 80%;
+      padding: 2%;
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: -webkit-transform .5s ease;
+      -o-transition: transform .5s ease;
+      transition: transform .5s ease;
+      transition: transform .5s ease, -webkit-transform .5s ease;
+      border-radius: 8px; }
+      @media (max-width: 768px) {
+        body .about-me-container .about-me-info img.mypic1 {
+          margin: 2% 0;
+          width: 95%; } }
+      body .about-me-container .about-me-info img.mypic1:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+    body .about-me-container .about-me-info p.welcome-about {
+      padding: 2%;
+      font-size: 28px;
+      font-weight: bold; }
+    body .about-me-container .about-me-info .signature-aboutme {
+      width: 20%;
+      padding-bottom: 4%; }
+      @media (max-width: 768px) {
+        body .about-me-container .about-me-info .signature-aboutme {
+          width: 50%; } }
+
+body a {
+  font-weight: bold; }

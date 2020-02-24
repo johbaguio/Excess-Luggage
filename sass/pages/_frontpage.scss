@@ -169,19 +169,23 @@
 
             li {
                 white-space: nowrap;
-                padding: .8% 0;
+                padding: 1% 0;
+                border: white outset;
+                margin: 3% 0;
 
-                @include md {
+
+                @include lg {
                     font-size: 15px;
                     white-space: normal;
+
                 }
 
                 &:hover {
                     font-size: 17px;
                     color: rgb(147, 204, 14);
 
-                    @include md {
-                        font-size: 15px;
+                    @include lg {
+                        font-size: 16px;
                     }
                 }
 

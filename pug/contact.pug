@@ -1,40 +1,54 @@
 extends partials/base.pug
 block body
-  +navigation() 
-  .mainpage-container
-    .header-wrapper
-      img(src="https://i.postimg.cc/VkvL64ZF/HEADER.jpg", alt="Surfing pic" class='header-pic')
-    
-    <div class='contact-options'>
-        <div class='contact-address'>
-            <h4> Where to find me</h4>
-            <p>📍 Amsterdamvej 14, Copenhagen S,Denmark </p>
-            <a href='mailto:johbaguio@gmail.com' target='_blank' rel='noopener noreferrer' class='contact-option'>
-                |✉️  johbaguio@gmail.com
+    <nav class="navbar-wrapper">
+        <div class="navbar-center">
+            <a href='./index.html' class="nav">
+                |Home 
             </a>
-            <p class='contact-option'> 📱 +45 29642002</p>
-        </div>
-        <div class='contact-socials'>
-
-            <a href='https://www.linkedin.com/in/johanna-may-baguio-a8aa90174/' rel='noopener noreferrer' target='_blank' class='social-link'>
-                |Let's connect <i class=" icon fab fa-linkedin"></i>
-            </a> <br />
-    
-            <a href='https://www.instagram.com/johbaguio/' rel='noopener noreferrer' target='_blank' class='social-link'>
-                |Follow me <i class=" icon fab fa-instagram"></i>
-            </a> <br />
-
-            <a href='https://www.facebook.com/johbaguio' rel='noopener noreferrer' target='_blank' class='social-link'>
-                |Add me up <i class="icon fab fa-facebook-f"></i>
+            <i class="fa fa-circle dot"></i>
+            <a href='./about.html' class="nav">
+                |About
             </a>
+            <i class="fa fa-circle dot"></i>
+            <a href='./contact.html' class="nav active">
+                |Contact
+            </a>
+        </div>  
+    </nav> 
+    .mainpage-container
+        .header-wrapper
+        img(src="https://i.postimg.cc/VkvL64ZF/HEADER.jpg", alt="Surfing pic" class='header-pic')
+        
+        <div class='contact-options'>
+            <div class='contact-address'>
+                <h4> Where to find me</h4>
+                <p>📍 Amsterdamvej 14, Copenhagen S,Denmark </p>
+                <a href='mailto:johbaguio@gmail.com' target='_blank' rel='noopener noreferrer' class='contact-option'>
+                    |✉️  johbaguio@gmail.com
+                </a>
+                <p class='contact-option'> 📱 +45 29642002</p>
+            </div>
+            <div class='contact-socials'>
+
+                <a href='https://www.linkedin.com/in/johanna-may-baguio-a8aa90174/' rel='noopener noreferrer' target='_blank' class='social-link'>
+                    |Let's connect <i class=" icon fab fa-linkedin"></i>
+                </a> <br />
+        
+                <a href='https://www.instagram.com/johbaguio/' rel='noopener noreferrer' target='_blank' class='social-link'>
+                    |Follow me <i class=" icon fab fa-instagram"></i>
+                </a> <br />
+
+                <a href='https://www.facebook.com/johbaguio' rel='noopener noreferrer' target='_blank' class='social-link'>
+                    |Add me up <i class="icon fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <img src="https://i.postimg.cc/8zBDgXcT/trrr.png" alt="Xoxo,Johanna" class="plane-pic animated slideInLeft slow">
         </div>
-        <img src="https://i.postimg.cc/8zBDgXcT/trrr.png" alt="Xoxo,Johanna" class="plane-pic animated slideInLeft slow">
-    </div>
-    
-  +footer()
+        
+    +footer()
 
 
-       
+        
 
 
 

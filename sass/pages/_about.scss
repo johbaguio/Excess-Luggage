@@ -1,0 +1,82 @@
+.about-me-container {
+    margin: 0 10%;
+    border-width: 5px;
+    border-radius: 5px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    background: rgba(245, 184, 106, .5);
+    box-shadow: 0 0 8px 8px #FAF0DC inset;
+
+    @include md {
+        margin: 0 3%;
+    }
+
+    .about-me-info {
+        margin: 0 10%;
+        align-items: center;
+
+        @include md {
+            flex-direction: column;
+            margin: 0 3%;
+        }
+
+        h3 {
+            margin: 0 !important;
+            padding: 30px 0 15px 0;
+
+            @include md {
+                padding: 30px 0 0px 0;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            padding: 10px 0;
+
+            @include md {
+                padding: 5px 2px;
+                font-size: 17px;
+            }
+        }
+
+
+        img.mypic1 {
+            width: 80%;
+            padding: 2%;
+            transition: transform .5s ease;
+            border-radius: 8px;
+
+            @include md {
+                margin: 2% 0;
+                width: 95%;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        p.welcome-about {
+            padding: 2%;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .signature-aboutme {
+            width: 20%;
+            padding-bottom: 4%;
+
+            @include md {
+                width: 50%;
+            }
+        }
+    }
+
+
+}
+
+
+a {
+    font-weight: bold;
+}
